@@ -1,6 +1,6 @@
 # ReverseShells
 
-A collection of reverse shell one-liners that I use during CTFs, labs, and authorized security assessments.
+Just a collection of lot of reverse shells :)
 
 Instead of searching through old notes, blog posts, or cheat sheets, everything is kept here in a simple and organized format.
 
@@ -34,3 +34,7 @@ Instead of searching through old notes, blog posts, or cheat sheets, everything 
 ├── ruby/
 ├── socat/
 └── misc/
+```
+
+- Nitblan :))
+
